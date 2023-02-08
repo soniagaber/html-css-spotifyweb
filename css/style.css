@@ -130,6 +130,7 @@ main nav{
 
 main nav ul{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     gap: 17px;
@@ -286,4 +287,20 @@ footer{
     background-color: green;
     height: 100%;
     width: 15%;
+}
+
+
+
+
+
+
+
+
+
+/*--------------------------MEDIA QUERIES------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+@media screen and (max-width:991px) {
+    .container-album{
+        width: calc(100% / 4 - (12px * 3 / 4));
+    }
 }
