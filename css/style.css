@@ -2,11 +2,15 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px dotted red;
 }
 
 body{
     font-family:'Montserrat', sans-serif;
+    color: white;
+}
+
+.opacity{
+    opacity: 0.6;
 }
 
 #ui{
@@ -46,16 +50,16 @@ header li{
     flex-direction: column;
     gap: 8px;
     list-style-type: none;
-    color: gray;
 }
 
 header b{
-    color: white;
+    opacity: 1;
 }
 
 #header-sopra ul li i{
     padding: 6px;
-    background-color: gray;
+    opacity: 0.6;
+    background-color: white;
     color: black;
     margin-right: 4px;
 }
@@ -82,7 +86,6 @@ align-items: center;
 header hr{
     width: 100%;
     height: 1px solid;
-    color: grey;
 }
 
 #header-sotto div{
@@ -96,8 +99,66 @@ header hr{
 main{
     width: calc(100% - 150px);
     background-color: #141922;
+    overflow-y: scroll;
 }
 
+main h2, main h3{
+    color: white ;
+}
+
+#barra-upgrade{
+    height: 65px;
+    background-color: #080B12;
+}
+
+#barra-upgrade button{
+    right: 23px;
+    top:16px;
+    position: fixed;
+    border-radius: 50px;
+    background-color: transparent;
+    border:1px solid white;
+    color: white;
+    padding: 8px 27px 8px 27px;
+}
+
+main nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 17px;
+    list-style-type: none;
+}
+
+#container-titoli-copertine{
+    padding: 25px 20px 25px 15px;
+}
+
+.gruppo-album{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.container-album{
+    width: calc(100% / 6 - (12px * 5 / 6));
+}
+
+.container-album img{
+    width: 100%;
+}
+
+#artisti-più img{
+    border-radius: 50%;
+}
 
 /*---------------------------------------footer---------------------------------------------*/
 footer{
@@ -108,13 +169,18 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 7px;
 }
 
 #footer-sx{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 7px;
+    width: 230px;
+}
+
+#footer-sx-sx{
+    flex-grow: 1;
 }
 
 #footer-sx-sx, #footer-sx-dx{
@@ -131,13 +197,93 @@ footer{
 #footer-sx-sx div:nth-of-type(2){
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 #footer-sx-sx img{
     height: 30px;
 }
 
+#footer-sx-dx{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 #footer-centro{
     display: flex;
     flex-direction: column;
+    height: 100%;
+    padding: 4px;
+    min-width: 180px;
+    width: 450px;
+    align-items: center;
+}
+
+#footer-centro-sopra{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+#footer-centro-sopra i:nth-child(3){
+    font-size: 20px;
+}
+
+#footer-centro-sotto{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 4px;
+    align-items: center;
+}
+
+#contenitore-barra-track{
+    flex-grow: 1;
+}
+
+#barra-track{
+    height: 2.5px;
+    background-color: white;
+    opacity: 0.3;
+    width: 100%
+}
+
+#barra-track-current{
+    background-color: green;
+    height: 100%;
+    width: 15%;
+}
+
+#footer-dx{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px;
+    gap: 9px;
+    width: 230px;
+}
+
+#container-volume{
+    flex-grow: 1;
+}
+
+#max-volume{
+    height: 2px;
+    background-color: white;
+    opacity: 0.3;
+    width: 100%
+}
+
+#volume-scelto{
+    background-color: green;
+    height: 100%;
+    width: 15%;
 }

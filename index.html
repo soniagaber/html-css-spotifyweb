@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
@@ -27,8 +31,8 @@
                         <ul>
                             <li><img id="logo-scritta" src="img/logo.svg" alt=""></li>
                             <li><img class="icona-header" src="img/home.svg" alt=""><b> Home</b></li>
-                            <li><img class="icona-header"src="img/search.svg" alt=""> Cerca</li>
-                            <li><img class="icona-header"src="img/libreria.svg" alt=""> La tua libreria</li>
+                            <li><img class="icona-header" src="img/search.svg" alt=""> Cerca</li>
+                            <li><img class="icona-header" src="img/libreria.svg" alt=""> La tua libreria</li>
                             <li><b>PLAYLIST</b> </li>
                             <li><i class="fa-solid fa-plus icona-header"></i><span>Crea Playlist</span> </li>
                             <li>Nome Playlist</li>
@@ -43,15 +47,79 @@
                     <div id="header-sotto">
                         <a href=""><img class="icona-header" src="img/download.svg" alt=""> Installa app</a>
                         <hr>
-                        <div><img class="icona-header"src="img/profile.svg" alt=""><span><b>John Doe</b> </span> </div>
+                        <div><img class="icona-header" src="img/profile.svg" alt=""><span><b>John Doe</b> </span> </div>
                     </div>
                 </div>
             </header>
             <!---------------------------------------main------------------------------------------->
-        
-            <main>  </main>
+
+            <main>
+                <div id="barra-upgrade">
+                    <button>EFFETTUA L'UPGRADE</button>
+                </div>
+                <nav>
+                    <ul>
+                        <li>IN EVIDENZA</li>
+                        <li>PODCAST</li>
+                        <li>CLASSIFICHE</li>
+                        <li>GENERI E MOOD</li>
+                        <li>NUOVE USCITE</li>
+                        <li>SCOPRI</li>
+                    </ul>
+                </nav>
+
+                <div id="container-titoli-copertine">
+                    <h2>Recently Played</h2>
+                    <div id="recently" class="gruppo-album">
+                        <div class="container-album"><img src="img/metal_lifting.jpg" alt="">
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="container-album"><img src="img/stranger.jpeg" alt="">
+                            <h3>Stranger Things, vol.1 (a Netflix Original Series Soundtrack)</h3>
+                            <p>Kyle Dixon</p>
+                        </div>
+                        <div class="container-album"><img src="img/aquietplace.jpeg" alt="">
+                            <h3>A Quiet Place</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="container-album"><img src="img/split.jpeg" alt="">
+                            <h3>Split</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="container-album"><img src="img/cure.jpeg" alt="">
+                            <h3>S cure for wellness</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="container-album"><img src="img/sinister.jpeg" alt="">
+                            <h3>Sinister</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <h2>Creato per John Doe</h2>
+                    <p>Più ascolti. più accurati saranno i suggerimenti</p>
+                    <div id="creato-per" class="gruppo-album">
+                        <div class="container-album"><img src="img/radar.jpeg" alt="">
+                            <h3>Release Radar</h3>
+                        </div>
+                        <div class="container-album"><img src="img/mixdaily.jpeg" alt="">
+                            <h3>Daily Mix 1</h3>
+                        </div>
+                    </div>
+                    <h2>Artisti più popolari</h2>
+                    <p>Più ascolti. più accurati saranno i suggerimenti</p>
+                    <div id="artisti-più" class="gruppo-album">
+                        <div class="container-album"><img src="img/youg.jpeg" alt="">
+                            <h3>Release Radar</h3>
+                        </div>
+                        <div class="container-album"><img src="img/einaudi.jpeg" alt="">
+                            <h3>Daily Mix 1</h3>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
-        
+
         <!---------------------------------------footer------------------------------------------->
         <footer>
             <div id="footer-sx">
@@ -76,19 +144,29 @@
                     <i class="fa-solid fa-arrow-rotate-right"></i>
                 </div>
                 <div id="footer-centro-sotto">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div id="track-current-timer">0:25</div>
+                    <div id="contenitore-barra-track">
+                        <div id="barra-track">
+                            <div id="barra-track-current"></div>
+                        </div>
+                    </div>
+                    <div id="track-total">3:45</div>
                 </div>
             </div>
             <div id="footer-dx">
-                <i></i><i></i><i></i>
-                <div></div>
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div id="container-volume">
+                    <div id="max-volume">
+                        <div id="volume-scelto"> </div>
+                    </div>
+                </div>
             </div>
         </footer>
 
     </div>
-    
+
 </body>
 
 </html>
