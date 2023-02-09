@@ -68,6 +68,10 @@ header b{
     width: 65%;
 }
 
+.icona-xs{
+    display: none;
+}
+
 .icona-header{
     height: 2em;
     margin-right: 4px;
@@ -308,5 +312,25 @@ footer{
 @media screen and (max-width:767px){
     .container-album{
         width: calc(100% / 2 - (12px / 2));
+    }
+}
+
+@media screen and (max-width:575px){
+    header{
+        width: 35px;
+    }
+
+    main{
+        width: calc(100% - 35px);
+    }
+
+    .no-a-xs{
+        display: none;
+    }
+
+    .icona-xs{
+        display: inline-block;
+        height: 2em;
+    margin-right: 4px;
     }
 }
