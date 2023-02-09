@@ -1,81 +1,81 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body{
-    font-family:'Montserrat', sans-serif;
+body {
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
-.opacity{
+.opacity {
     opacity: 0.5;
 }
 
-#ui{
+#ui {
     width: 100vw;
     height: 100vh;
 }
 
-#flex-header-main{
+#flex-header-main {
     display: flex;
     flex-direction: row;
     height: calc(100% - 65px);
 }
 
 /*----------------------------------------header.-----------------------------------------*/
-header{
+header {
     background-color: black;
     width: 150px;
     padding: 14px 12px 6px;
 }
 
-header li{
+header li {
     font-size: 0.5em;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#flex-header{
+#flex-header {
     height: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-#header-sopra ul{
+#header-sopra ul {
     display: flex;
     flex-direction: column;
     gap: 8px;
     list-style-type: none;
 }
 
-#header-sopra ul li{
+#header-sopra ul li {
     position: relative;
 }
 
-#header-sopra ul li:hover{
+#header-sopra ul li:hover {
     cursor: pointer;
     opacity: 1;
 }
 
-#header-sopra ul li.active-laterale::before{
+#header-sopra ul li.active-laterale::before {
     content: " ";
     position: absolute;
     height: 18px;
     width: 2px;
-    background-color:#ADFF2F;
+    background-color: #ADFF2F;
     position: absolute;
     left: -12px;
 }
 
-header b{
+header b {
     opacity: 1;
 }
 
-#header-sopra ul li i{
+#header-sopra ul li i {
     padding: 6px;
     opacity: 0.6;
     background-color: white;
@@ -83,53 +83,53 @@ header b{
     margin-right: 4px;
 }
 
-#logo-scritta{
+#logo-scritta {
     width: 65%;
 }
 
-.icona-xs{
+.icona-xs {
     display: none;
 }
 
-.icona-header{
+.icona-header {
     height: 2em;
     margin-right: 4px;
 }
 
-#header-sotto{
+#header-sotto {
     font-size: 0.5em;
 }
 
-#header-sotto a{
-display: flex;
-flex-direction: row;
-align-items: center;
+#header-sotto a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-#header-sotto a:hover{
+#header-sotto a:hover {
     opacity: 1;
     cursor: pointer;
 }
 
-header hr{
+header hr {
     width: 100%;
     border: 0.3px solid;
     margin-top: 5px;
     margin-bottom: 4px;
 }
 
-#header-sotto div{
+#header-sotto div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    }
+}
 
-#header-sotto div img{
+#header-sotto div img {
     background-color: grey;
     border-radius: 40%;
 }
 
-#header-sotto a{
+#header-sotto a {
     text-decoration: none;
     color: white;
     opacity: 0.5;
@@ -137,51 +137,51 @@ header hr{
 
 /*---------------------------------------main---------------------------------------------*/
 
-main{
+main {
     width: calc(100% - 150px);
     background-color: #141922;
     overflow-y: auto;
 }
 
-main h2{
-    color: white ;
+main h2 {
+    color: white;
     font-size: 0.9em;
 }
 
-h3{
+h3 {
     color: white;
     font-size: 1.2em;
 }
 
-#barra-upgrade{
+#barra-upgrade {
     height: 65px;
     background-color: #080B12;
 }
 
-#barra-upgrade button{
+#barra-upgrade button {
     right: 23px;
-    top:16px;
+    top: 16px;
     position: fixed;
     border-radius: 50px;
     background-color: transparent;
-    border:1.5px solid rgba(255, 255, 255, 0.5);
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
     color: white;
     padding: 8px 27px 8px 27px;
     font-size: 0.5em;
 }
 
-#barra-upgrade button:hover{
-    border:2px solid rgba(255, 255, 255); 
+#barra-upgrade button:hover {
+    border: 2px solid rgba(255, 255, 255);
     transform: scale(120%);
 }
 
-main nav{
+main nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-main nav ul{
+main nav ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -191,41 +191,41 @@ main nav ul{
     font-size: 0.5em;
 }
 
-main nav ul b{
+main nav ul b {
     opacity: 0.5;
 }
 
-main nav ul li{
-    padding:10px 0;
+main nav ul li {
+    padding: 10px 0;
     position: relative;
 }
 
-main nav ul b:hover{
+main nav ul b:hover {
     opacity: 1;
     cursor: pointer;
 }
 
-main nav ul li.active::before{
+main nav ul li.active::before {
     content: " ";
     position: absolute;
     height: 2px;
     width: 20px;
-    background-color:#ADFF2F;
+    background-color: #ADFF2F;
     bottom: 6px;
     left: 50%;
     transform: translate(-50%);
 }
 
-.piu-ascolti{
+.piu-ascolti {
     font-size: 0.55em;
     margin-top: 6px;
 }
 
-#container-titoli-copertine{
+#container-titoli-copertine {
     padding: 25px 20px 25px 15px;
 }
 
-.gruppo-album{
+.gruppo-album {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -236,7 +236,7 @@ main nav ul li.active::before{
     margin-bottom: 17px;
 }
 
-.container-album{
+.container-album {
     width: calc(100% / 6 - (12px * 5 / 6));
     display: flex;
     flex-direction: column;
@@ -244,23 +244,21 @@ main nav ul li.active::before{
     gap: 7px;
 }
 
-.container-album *:hover{
+.container-album *:hover {
     cursor: pointer;
 }
 
-.container-album .image-container{
+.container-album .image-container {
     position: relative;
 }
 
-.container-album .image-container:hover{
+.container-album .image-container:hover {}
 
-}
-
-.container-album .image-container i{
+.container-album .image-container i {
     display: none;
 }
 
-.container-album .image-container:hover i{
+.container-album .image-container:hover i {
     display: inline-block;
     position: absolute;
     font-size: 50px;
@@ -271,25 +269,25 @@ main nav ul li.active::before{
     z-index: 2;
 }
 
-.container-album img{
+.container-album img {
     width: 100%;
 }
 
-.container-album img:hover{
-    opacity:0.5;
+.container-album img:hover {
+    opacity: 0.5;
 }
 
-.container-album p{
+.container-album p {
     opacity: 0.5;
 }
 
 
-#artisti-più img{
+#artisti-più img {
     border-radius: 50%;
 }
 
 /*---------------------------------------footer---------------------------------------------*/
-footer{
+footer {
     background-color: #282828;
     width: 100%;
     height: 65px;
@@ -299,7 +297,7 @@ footer{
     align-items: center;
 }
 
-#footer-sx{
+#footer-sx {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -307,45 +305,46 @@ footer{
     width: 230px;
 }
 
-#footer-sx-sx{
+#footer-sx-sx {
     flex-grow: 1;
     font-size: 0.5em;
 }
 
-#footer-sx-sx, #footer-sx-dx{
+#footer-sx-sx,
+#footer-sx-dx {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 7px;
 }
 
-#footer-sx-sx div:first-of-type{
+#footer-sx-sx div:first-of-type {
     height: 100%;
 }
 
-#footer-sx-sx div:nth-of-type(2){
+#footer-sx-sx div:nth-of-type(2) {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-#footer-sx-sx img{
+#footer-sx-sx img {
     height: 30px;
 }
 
-#footer-sx *.opacity:hover{
+#footer-sx *.opacity:hover {
     opacity: 1;
     cursor: pointer;
 }
 
-#footer-sx-dx{
+#footer-sx-dx {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 0.7em;
 }
 
-#footer-centro{
+#footer-centro {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -355,7 +354,7 @@ footer{
     align-items: center;
 }
 
-#footer-centro-sopra{
+#footer-centro-sopra {
     height: 50%;
     width: 100%;
     display: flex;
@@ -365,19 +364,19 @@ footer{
     align-items: center;
 }
 
-#footer-centro-sopra i{
+#footer-centro-sopra i {
     font-size: 11px;
 }
 
-#footer-centro-sopra i:nth-child(3){
+#footer-centro-sopra i:nth-child(3) {
     font-size: 18px;
 }
 
-#footer-centro-sopra i:nth-child(3):hover{
+#footer-centro-sopra i:nth-child(3):hover {
     font-size: 20px;
 }
 
-#footer-centro-sotto{
+#footer-centro-sotto {
     height: 50%;
     display: flex;
     flex-direction: row;
@@ -387,18 +386,18 @@ footer{
     align-items: center;
 }
 
-.tempo{
+.tempo {
     font-size: 0.45em;
 }
 
-#contenitore-barra-track{
+#contenitore-barra-track {
     flex-grow: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#barra-track{
+#barra-track {
     height: 2.5px;
     background-color: white;
     opacity: 0.3;
@@ -406,7 +405,7 @@ footer{
     display: inline-block;
 }
 
-#barra-track-current{
+#barra-track-current {
     background-color: white;
     opacity: 1;
     height: 2.5px;
@@ -414,12 +413,12 @@ footer{
     display: inline-block;
 }
 
-#barra-track-current:hover{
+#barra-track-current:hover {
     background-color: #ADFF2F;
     cursor: pointer;
 }
 
-#footer-dx{
+#footer-dx {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -430,11 +429,11 @@ footer{
     font-size: 0.5em;
 }
 
-#container-volume{
+#container-volume {
     flex-grow: 1;
 }
 
-#max-volume{
+#max-volume {
     height: 2px;
     background-color: white;
     opacity: 0.3;
@@ -442,20 +441,20 @@ footer{
     display: inline-block;
 }
 
-#volume-scelto{
+#volume-scelto {
     background-color: white;
     height: 2px;
     width: 15%;
     display: inline-block;
 }
 
-#volume-scelto:hover{
+#volume-scelto:hover {
     cursor: pointer;
     background-color: #ADFF2F;
 }
 
-footer i:hover{
- cursor: pointer;
+footer i:hover {
+    cursor: pointer;
 }
 
 
@@ -469,33 +468,33 @@ footer i:hover{
 /*--------------------------MEDIA QUERIES------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
 @media screen and (max-width:991px) {
-    .container-album{
+    .container-album {
         width: calc(100% / 4 - (12px * 3 / 4));
     }
 }
 
-@media screen and (max-width:767px){
-    .container-album{
+@media screen and (max-width:767px) {
+    .container-album {
         width: calc(100% / 2 - (12px / 2));
     }
 }
 
-@media screen and (max-width:575px){
-    header{
+@media screen and (max-width:575px) {
+    header {
         width: 42px;
     }
 
-    main{
+    main {
         width: calc(100% - 42px);
     }
 
-    .no-a-xs{
+    .no-a-xs {
         display: none;
     }
 
-    .icona-xs{
+    .icona-xs {
         display: inline-block;
         height: 2em;
-    margin-right: 4px;
+        margin-right: 4px;
     }
 }
