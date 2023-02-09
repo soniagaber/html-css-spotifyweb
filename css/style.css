@@ -52,6 +52,25 @@ header li{
     list-style-type: none;
 }
 
+#header-sopra ul li{
+    position: relative;
+}
+
+#header-sopra ul li:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+#header-sopra ul li.active-laterale::before{
+    content: " ";
+    position: absolute;
+    height: 18px;
+    width: 2px;
+    background-color:#ADFF2F;
+    position: absolute;
+    left: -4px;
+}
+
 header b{
     opacity: 1;
 }
@@ -87,6 +106,11 @@ flex-direction: row;
 align-items: center;
 }
 
+#header-sotto a:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
 header hr{
     width: 100%;
     border: 0.3px solid;
@@ -109,7 +133,7 @@ header hr{
 main{
     width: calc(100% - 150px);
     background-color: #141922;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 main h2{
@@ -132,11 +156,16 @@ h3{
     top:16px;
     position: fixed;
     border-radius: 50px;
-    background-color: #080B12;
-    border:2px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    border:1.5px solid rgba(255, 255, 255, 0.5);
     color: white;
     padding: 8px 27px 8px 27px;
     font-size: 0.5em;
+}
+
+#barra-upgrade button:hover{
+    border:2px solid rgba(255, 255, 255); 
+    transform: scale(120%);
 }
 
 main nav{
@@ -153,6 +182,31 @@ main nav ul{
     gap: 17px;
     list-style-type: none;
     font-size: 0.5em;
+}
+
+main nav ul b{
+    opacity: 0.5;
+}
+
+main nav ul li{
+    padding:10px 0;
+    position: relative;
+}
+
+main nav ul b:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+main nav ul li.active::before{
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color:#ADFF2F;
+    bottom: 6px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .piu-ascolti{
@@ -180,8 +234,39 @@ main nav ul{
     gap: 7px;
 }
 
+.container-album *:hover{
+    cursor: pointer;
+}
+
+.container-album .image-container{
+    position: relative;
+}
+
+.container-album .image-container:hover{
+
+}
+
+.container-album .image-container i{
+    display: none;
+}
+
+.container-album .image-container:hover i{
+    display: inline-block;
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    opacity: 1;
+    z-index: 2;
+}
+
 .container-album img{
     width: 100%;
+}
+
+.container-album img:hover{
+    opacity:0.5;
 }
 
 .container-album p{
@@ -238,6 +323,11 @@ footer{
     height: 30px;
 }
 
+#footer-sx *.opacity:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
 #footer-sx-dx{
     display: flex;
     flex-direction: row;
@@ -273,6 +363,10 @@ footer{
     font-size: 18px;
 }
 
+#footer-centro-sopra i:nth-child(3):hover{
+    font-size: 20px;
+}
+
 #footer-centro-sotto{
     height: 50%;
     display: flex;
@@ -289,19 +383,30 @@ footer{
 
 #contenitore-barra-track{
     flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #barra-track{
     height: 2.5px;
     background-color: white;
     opacity: 0.3;
-    width: 100%
+    width: 85%;
+    display: inline-block;
 }
 
 #barra-track-current{
-    background-color: black;
-    height: 100%;
+    background-color: white;
+    opacity: 1;
+    height: 2.5px;
     width: 15%;
+    display: inline-block;
+}
+
+#barra-track-current:hover{
+    background-color: #ADFF2F;
+    cursor: pointer;
 }
 
 #footer-dx{
@@ -323,13 +428,24 @@ footer{
     height: 2px;
     background-color: white;
     opacity: 0.3;
-    width: 100%
+    width: 85%;
+    display: inline-block;
 }
 
 #volume-scelto{
-    background-color: black;
-    height: 100%;
+    background-color: white;
+    height: 2px;
     width: 15%;
+    display: inline-block;
+}
+
+#volume-scelto:hover{
+    cursor: pointer;
+    background-color: #ADFF2F;
+}
+
+footer i:hover{
+ cursor: pointer;
 }
 
 
