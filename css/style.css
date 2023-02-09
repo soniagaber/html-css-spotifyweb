@@ -28,7 +28,7 @@ body{
 header{
     background-color: black;
     width: 150px;
-    padding: 7px 10px 10px 4px;
+    padding: 14px 12px 6px;
 }
 
 header li{
@@ -68,7 +68,7 @@ header li{
     width: 2px;
     background-color:#ADFF2F;
     position: absolute;
-    left: -4px;
+    left: -12px;
 }
 
 header b{
@@ -114,6 +114,8 @@ align-items: center;
 header hr{
     width: 100%;
     border: 0.3px solid;
+    margin-top: 5px;
+    margin-bottom: 4px;
 }
 
 #header-sotto div{
@@ -211,6 +213,7 @@ main nav ul li.active::before{
 
 .piu-ascolti{
     font-size: 0.55em;
+    margin-top: 6px;
 }
 
 #container-titoli-copertine{
@@ -224,6 +227,8 @@ main nav ul li.active::before{
     flex-wrap: wrap;
     gap: 12px;
     font-size: 0.5em;
+    margin-top: 17px;
+    margin-bottom: 17px;
 }
 
 .container-album{
@@ -472,11 +477,11 @@ footer i:hover{
 
 @media screen and (max-width:575px){
     header{
-        width: 35px;
+        width: 42px;
     }
 
     main{
-        width: calc(100% - 35px);
+        width: calc(100% - 42px);
     }
 
     .no-a-xs{
