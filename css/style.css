@@ -124,6 +124,11 @@ header hr{
     align-items: center;
     }
 
+#header-sotto div img{
+    background-color: grey;
+    border-radius: 40%;
+}
+
 #header-sotto a{
     text-decoration: none;
     color: white;
@@ -180,7 +185,7 @@ main nav ul{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 17px;
     list-style-type: none;
     font-size: 0.5em;
