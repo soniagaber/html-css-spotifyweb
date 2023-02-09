@@ -10,7 +10,7 @@ body{
 }
 
 .opacity{
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 #ui{
@@ -89,7 +89,7 @@ align-items: center;
 
 header hr{
     width: 100%;
-    height: 1px solid;
+    border: 0.3px solid;
 }
 
 #header-sotto div{
@@ -97,6 +97,12 @@ header hr{
     flex-direction: row;
     align-items: center;
     }
+
+#header-sotto a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+}
 
 /*---------------------------------------main---------------------------------------------*/
 
@@ -106,8 +112,14 @@ main{
     overflow-y: scroll;
 }
 
-main h2, main h3{
+main h2{
     color: white ;
+    font-size: 0.9em;
+}
+
+h3{
+    color: white;
+    font-size: 1.2em;
 }
 
 #barra-upgrade{
@@ -120,10 +132,11 @@ main h2, main h3{
     top:16px;
     position: fixed;
     border-radius: 50px;
-    background-color: transparent;
-    border:1px solid white;
+    background-color: #080B12;
+    border:2px solid rgba(255, 255, 255, 0.5);
     color: white;
     padding: 8px 27px 8px 27px;
+    font-size: 0.5em;
 }
 
 main nav{
@@ -139,6 +152,11 @@ main nav ul{
     justify-content: space-between;
     gap: 17px;
     list-style-type: none;
+    font-size: 0.5em;
+}
+
+.piu-ascolti{
+    font-size: 0.55em;
 }
 
 #container-titoli-copertine{
@@ -151,15 +169,25 @@ main nav ul{
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 12px;
+    font-size: 0.5em;
 }
 
 .container-album{
     width: calc(100% / 6 - (12px * 5 / 6));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
 }
 
 .container-album img{
     width: 100%;
 }
+
+.container-album p{
+    opacity: 0.5;
+}
+
 
 #artisti-più img{
     border-radius: 50%;
@@ -186,6 +214,7 @@ footer{
 
 #footer-sx-sx{
     flex-grow: 1;
+    font-size: 0.5em;
 }
 
 #footer-sx-sx, #footer-sx-dx{
@@ -213,13 +242,14 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    font-size: 0.7em;
 }
 
 #footer-centro{
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 4px;
+    padding: 2px;
     min-width: 180px;
     width: 450px;
     align-items: center;
@@ -235,8 +265,12 @@ footer{
     align-items: center;
 }
 
+#footer-centro-sopra i{
+    font-size: 11px;
+}
+
 #footer-centro-sopra i:nth-child(3){
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #footer-centro-sotto{
@@ -247,6 +281,10 @@ footer{
     justify-content: space-between;
     gap: 4px;
     align-items: center;
+}
+
+.tempo{
+    font-size: 0.45em;
 }
 
 #contenitore-barra-track{
@@ -261,7 +299,7 @@ footer{
 }
 
 #barra-track-current{
-    background-color: green;
+    background-color: black;
     height: 100%;
     width: 15%;
 }
@@ -274,6 +312,7 @@ footer{
     padding: 7px;
     gap: 9px;
     width: 230px;
+    font-size: 0.5em;
 }
 
 #container-volume{
@@ -288,7 +327,7 @@ footer{
 }
 
 #volume-scelto{
-    background-color: green;
+    background-color: black;
     height: 100%;
     width: 15%;
 }
